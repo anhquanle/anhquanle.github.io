@@ -1,0 +1,118 @@
+@media (max-width: 1399.98px) {
+  /* job-info */
+  #job-info > .container > .row {
+    padding: 0 !important;
+  }
+
+  .grid-1 {
+    grid-template-columns: 9fr 5fr;
+  }
+
+  .el--1 {
+    padding-left: 35px;
+    font-size: 30.4px !important;
+  }
+
+  .el--3 > ul {
+    padding: 0 18px 0 40px !important;
+  }
+
+  .hobby .hobby-container {
+    padding: 0 10px !important;
+  }
+
+  .el--3 .hobby-text {
+    font-size: 15px;
+  }
+
+  .list-title > span::before {
+    left: -18px !important;
+  }
+
+  .icon {
+    left: 37px;
+    top: 10px;
+  }
+
+  /* certificate */
+  #certi > .container {
+    margin: auto;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .col-md-8 h6,
+  .col-md-8 li {
+    font-size: 14.8px !important;
+  }
+
+  /* project */
+  #project > .container {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  /* job info */
+  #job-info > .container {
+    padding: 0 !important;
+    margin: auto;
+  }
+  .grid-1 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .el--1 {
+    padding-left: 27.3px;
+    font-size: 28.7px !important;
+  }
+
+  .el--3 > ul {
+    padding: 0 13px 0 38px !important;
+  }
+
+  .hobby .hobby-container {
+    padding: 0 8px !important;
+  }
+
+  .el--3 .hobby-text {
+    font-size: 13.3px;
+  }
+
+  .icon {
+    left: 33px;
+    top: 10px;
+  }
+
+  /* certificate */
+  .col-md-8 h6,
+  .col-md-8 li {
+    font-size: 14px !important;
+  }
+
+  /* project */
+  .second-tr > td {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .second-tr > td > span:first-child {
+    box-sizing: border-box;
+    width: fit-content;
+  }
+  .second-tr > td > span:last-child {
+    grid-column: 2/3;
+  }
+
+  .second-tr > td > span:nth-last-child(-n + 2) {
+    padding: 0 !important;
+  }
+  /* project chapter */
+  .g-item3 tr > td {
+    padding-right: 12px !important;
+  }
+
+  .g-item5 tr > td {
+    padding: 8px !important;
+  }
+}

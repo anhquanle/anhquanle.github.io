@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #6c757d;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fs-7 {
+  font-size: 0.7rem;
+}
+
+.px-45 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/*          banner style          */
+.centered {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.small {
+  font-size: 12px;
+}
+
+.grid-1 {
+  grid-template-columns: 5fr 3fr;
+  grid-auto-rows: min-content;
+}
+
+/*           job style            */
+
+/* skill, activity, education */
+.el--1 {
+  padding: 57px 0 60px 42px;
+}
+
+.el--2 {
+  align-self: center;
+  justify-self: center;
+  font-size: 50px;
+  color: #b8b8b8;
+  padding-right: 10px;
+}
+
+.el--3 {
+  grid-column: 1/3;
+  padding-bottom: 20px;
+}
+
+.space {
+  padding-bottom: 50px;
+}
+
+.list {
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.list-title > span {
+  position: relative;
+}
+
+.list-title > span::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ab1ff;
+  position: absolute;
+  left: -25px;
+  top: 5px;
+}
+
+.present {
+  border-radius: 7px;
+  background: #4ab1ff;
+  padding: 0 13px;
+  font-style: italic;
+  color: white;
+}
+
+/* language, skill */
+.abc span {
+  background: #4ab1ff;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.abc span[class="grey"] {
+  background: #b8b8b8;
+}
+
+/* hobby */
+.hobby-container {
+  padding: 0 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  row-gap: 30px;
+  width: fit-content;
+}
+
+.ic {
+  color: #4ab1ff;
+  font-size: 20px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #4ab1ff;
+  transform: translate(-50%, -50%);
+  left: 39.5px;
+  top: 10px;
+}
+
+/*           certificate           */
+.border-radius {
+  border-radius: 0;
+}
+
+/*           project               */
+.grid-2 {
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+}
+
+.corner-2 {
+  border-radius: 15px;
+  background: #4ab1ff;
+  padding: 0 13px;
+  font-style: italic;
+  color: white;
+}
+
+.grid-3 {
+  grid-template-columns: 3fr 7fr;
+}
+
+/*               footer               */
+#footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 65px;
+}
+
+.blue {
+  color: #4ab1ff;
+  font-size: 150%;
+  left: -40px;
+  top: -7px;
+}
+
+/*           scroll up btn           */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  background: rgb(173, 248, 255);
+  color: #fff;
+  border-radius: 25%;
+  box-sizing: border-box;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+}
+
+/*       nâng cao của asm 2            */
+.avatar {
+  border-radius: 50%;
+  border: solid 10px rgba(254, 193, 255, 0.7);
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: auto;
+}
+
+/*            email  form               */
+.hidden {
+  display: none;
+}
+
+#form {
+  grid-template-rows: 3fr 1fr;
+}
+
+.btn-submit {
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  color: #fff;
+  user-select: none;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: #0d6efd;
+  border-color: transparent;
+  backdrop-filter: blur(10px);
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.12);
+}
+
+.btn-submit:active {
+  transform: translate(1px, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-submit:focus {
+  outline: none;
+}
+
+#form.invalid #email {
+  border: 1.5px solid #ff5448;
+  box-shadow: 0 1.75rem 3.5rem rgba(255, 0, 0, 0.1);
+}
+
+/*         view more       view less         */
+#job-info .card-body:hover {
+  box-shadow: 0px -8px 12px rgba(0, 0, 0, 0.12);
+}
+
+#job-info .card {
+  height: auto !important;
+}
+
+.btn-vm {
+  transition: all 0.2s;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  border-radius: 2.5rem;
+  width: 160px;
+  justify-self: center;
+  background: rgb(242, 237, 196);
+}
+
+.btn-vm:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.unactive::after {
+  content: "▼ View more";
+}
+
+.active::after {
+  content: "▲ View less";
+}
+
+/*           project chapter          */
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #8e0000;
+  border-radius: 50%;
+  background-color: rgb(187, 162, 255);
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.table-5 td ul::before {
+  border-bottom: 2px dotted #4ab1ff !important;
+  content: "";
+  position: absolute;
+  bottom: -8.5px;
+  right: 0;
+  width: 115%;
+}
+
+.grid-4 {
+  grid-template-columns: 1fr 3fr;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.grid-6 {
+  grid-template-columns: 1fr 4fr;
+}
+
+.g-item3 {
+  grid-row: 1/3;
+  grid-column: 3/4;
+}
+
+.personal-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.question-mark {
+  height: 30px;
+  width: 30px;
+}
+
+.flag {
+  height: 50px;
+  width: 50px;
+}
+
+/* button back to index.html */
+#homescreen {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: rgb(232, 255, 98);
+  color: #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 15px;
+  padding: 4px 6px;
+}

@@ -1,0 +1,76 @@
+@media (max-width: 991.98px) {
+  /* banner */
+  .delete {
+    display: none;
+  }
+
+  li:nth-child(3) img {
+    display: none;
+  }
+
+  /* personal-info */
+  #about .row .col-md-6 {
+    padding: 2rem !important;
+  }
+
+  /* job info */
+  .el--1 {
+    padding-left: 38px;
+  }
+
+  .hobby .hobby-container {
+    padding: 0 18px !important;
+  }
+
+  .hobby-container .hobby-text {
+    font-size: 14.3px;
+  }
+
+  .icon {
+    left: 36px;
+    top: 10px;
+  }
+
+  /* certificate */
+  .col-md-8 {
+    width: max-content;
+  }
+
+  /* project */
+  #project h1,
+  #pro-container > .row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  #project .container > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* project chapter */
+  .g-item1,
+  .g-item2,
+  .g-item3,
+  .g-item4,
+  .g-item5 {
+    grid-column: 1/4;
+  }
+  .grid-5 {
+    grid-template-rows: auto;
+  }
+
+  .g-item2 {
+    grid-row: 3/4;
+  }
+
+  .g-item3 {
+    grid-row: 5/6;
+  }
+
+  .g-item2 tr > td > div,
+  .g-item3 tr > td > div,
+  .g-item5 tr > td > div {
+    padding-left: 2.5rem;
+  }
+}
